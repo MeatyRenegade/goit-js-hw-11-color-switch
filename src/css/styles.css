@@ -28,12 +28,7 @@ body {
   background-clip: text;
 }
 
-.btn__box {
-  display: flex;
-  flex-direction: row;
-}
-
-.button {
+.btn {
   cursor: pointer;
   position: relative;
   padding: 1rem 2.5rem;
@@ -52,11 +47,22 @@ body {
   outline: none;
 }
 
-.button:active {
+.btn:hover {
+  box-shadow: 0 1rem 1.25rem 0 rgba(139, 7, 128, 0.5),
+    0 -0.25rem 1.5rem rgb(95, 13, 133) inset,
+    0 0.75rem 0.5rem rgba(255, 255, 255, 0.4) inset,
+    0 0.25rem 0.5rem 0 rgb(95, 39, 110) inset;
+}
+
+.btn:active {
   transform: translateY(5px);
 }
 
-.button span {
+.btn:disabled {
+  transform: translateY(0px);
+}
+
+.btn span {
   background-image: linear-gradient(0deg, #ee82da 0%, #fefafd 100%);
   -webkit-background-clip: text;
   background-clip: text;
