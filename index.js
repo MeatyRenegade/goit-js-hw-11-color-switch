@@ -24,8 +24,8 @@ function changeColorStart() {
   buttonStartRef.disabled = true;
 
   newColor = setInterval(() => {
-    const randomNumber = randomIntegerFromInterval(0, colors.length - 1);
-    bodyRef.style.backgroundColor = colors[randomNumber];
+    const randomColor = randomIntegerFromInterval(0, colors.length - 1);
+    bodyRef.style.backgroundColor = colors[randomColor];
   }, 1000);
 
   return newColor;
